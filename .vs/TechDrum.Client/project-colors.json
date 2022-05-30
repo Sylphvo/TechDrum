@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7bfcf7fb-99af-4d88-b6a6-857dccd85c3d": {
+      "ProjectGuid": "7bfcf7fb-99af-4d88-b6a6-857dccd85c3d",
+      "DisplayName": "NagaCasino.Web",
+      "ColorIndex": 0
+    },
+    "42004a04-005a-4b9e-a2a2-acf993b2cad8": {
+      "ProjectGuid": "42004a04-005a-4b9e-a2a2-acf993b2cad8",
+      "DisplayName": "NagaCasino.Core",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

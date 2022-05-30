@@ -1,0 +1,47 @@
+﻿@model TechDrum.Core.Models.OTP.CodeOtpModel
+@{
+    ViewData["Title"] = "Notification";
+    Layout = "_LayoutMail";
+}
+@section Styles{
+    <link rel="stylesheet" href="~/Portal/assets/css/login_register.css" />
+}
+@section Scripts {
+    <script type="text/javascript" src="/js/OTP/opt.js"></script>
+}
+<section>
+    <div class="grid-container full">
+        <div class="grid-x">
+            <div class="image-banner">
+                <img src="~/Portal/assets/images/login_banner.jpg" alt="" style="height:100vh;">
+            </div>
+            <div class="cell large-10 medium-12 center">
+                <div class="banner-pages scroll-box">
+                    <div class="box-intro container-small">
+                        <div class="text-center">
+                            <form class="form validate-form" id="formValidate" asp-area="Portal" asp-controller="TwoFactorAuthen" asp-action="FormValidateWhenSignIn">
+                                <div class="position-relative">
+                                    <div> <h3>Security</h3></div>
+                                    <div> <span>A code include 6 number</span></div>
+                                    <div class="card p-2 text-center" style="background: #fff0">
+
+                                        <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2">
+                                            <input asp-for="number1" name="number1" required class="m-2 text-center form-control rounded" min="0" type="number" id="first" maxlength="1" pattern="[0-9]" />
+                                            <input asp-for="number2" name="number2" required class="m-2 text-center form-control rounded" min="0" type="number" id="second" maxlength="1" pattern="[0-9]" />
+                                            <input asp-for="number3" name="number3" required class="m-2 text-center form-control rounded" min="0" type="number" id="third" maxlength="1" pattern="[0-9]" />
+                                            <input asp-for="number4" name="number4" required class="m-2 text-center form-control rounded" min="0" type="number" id="fourth" maxlength="1" pattern="[0-9]" />
+                                            <input asp-for="number5" name="number5" required class="m-2 text-center form-control rounded" min="0" type="number" id="fifth" maxlength="1" pattern="[0-9]" />
+                                            <input asp-for="number6" name="number6" required class="m-2 text-center form-control rounded" min="0" type="number" id="sixth" maxlength="1" pattern="[0-9]" />
+                                            <input id="username" name="username" style="display:none" required class="m-2 text-center form-control rounded" asp-for="username" type="text" />
+                                        </div>
+                                        <div class="mt-4"><center><button id="btnValidate" type="submit" class="btn px-4 validate">Validate</button> </center> </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

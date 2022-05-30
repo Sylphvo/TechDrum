@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "_AnonymousLayout";
+    ViewData[ViewDataKey.Title] = Messages.Auth.PageTitleVerify;
+}
+@section Styles{
+    <link rel="stylesheet" href="~/Portal/assets/css/login_register.css" />
+}
+<section class="container-form gird-container-full padding-customer">
+    <div class="grid-container full mt-5">
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-10 medium-12 center">
+                <div class="alert alert-success">
+                    <p>
+                        Welcome to nagaclubs, we're glad you're with us
+                        If you have not received a confirmation email, please click resend
+                    </p>
+                </div>
+                <div class="summit">
+                    <p class="text-center">If you haven't received the email yet<a asp-area="Portal" asp-controller="Auth" asp-action="SubmitResendmailRegister"> Resend mail</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts {
+    <script src="~/js/Load/Load.js"></script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

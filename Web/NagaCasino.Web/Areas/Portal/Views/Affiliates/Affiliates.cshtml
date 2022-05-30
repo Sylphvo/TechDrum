@@ -1,0 +1,137 @@
+﻿@using TechDrum.Core.Utils
+@model string
+@{
+    Layout = "_Layout";
+    ViewData[ViewDataKey.Title] = Messages.Affiliates.PageTitleAffiliates;
+    var Domain_NAGA = FundistHelper.ClientConfigs.BaseUrlPortal;
+}
+@section Styles{
+    <link rel="stylesheet" href="~/Portal/assets/css/affiliates.min.css" />
+}
+@section scripts{
+    <link rel="stylesheet" href="/Portal/assets/css/Tree-Affiliates/Treeview.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/Portal/assets/css/Tree-Affiliates/underscore-min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="/Portal/assets/css/Tree-Affiliates/knockout-min.js"></script>
+    <script src="/Portal/assets/css/Tree-Affiliates/bootstrap-treeview.min.js"></script>
+    <script src="/Portal/assets/css/Tree-Affiliates/clipboard.min.js"></script>
+    <script>
+        // Example usage
+        var arr = @(Html.Raw(Model.ToString()));
+            document.getElementById("total_affiliate_aff").innerHTML = arr.length;
+        unflatten = function (array, parent, tree) {
+            tree = typeof tree !== 'undefined' ? tree : [];
+            parent = typeof parent !== 'undefined' ? parent : { id: "0" };
+            var nodes = _.filter(array, function (child) { return child.nodeLevel == parent.id; });
+            if (!_.isEmpty(nodes)) {
+                if (parent.id == "0") {
+                    tree = nodes;
+                } else {
+                    parent['nodes'] = nodes
+                }
+                _.each(nodes, function (child) {
+                    unflatten(array, child);
+                });
+            }
+
+            return tree;
+        }
+        tree = unflatten(arr);
+        /* globals Tree */
+        'use strict';
+        function getTree() {
+            // Some logic to retrieve, or generate tree structure
+            return tree;
+
+        }
+        // Create the View Model.
+        var ViewModel = function (jsonData) {
+            var self = this;
+            self.MyData = ko.observable(jsonData);
+
+            ko.computed(function () {
+                $('#tree').treeview({
+                    color: "#black",
+                    //nodeIcon: "glyphicon-item ",
+                    showTags: true,
+                    showBorder: false,
+                    data: self.MyData()
+                })
+                    .on('nodeSelected', function (event, data) {
+
+                    });
+            })
+        }
+        // Create the View Model and initialise with initial data
+        var vm = new ViewModel(getTree());
+        // Bind.
+        ko.applyBindings(vm, document.getElementById("bindSection"));
+
+    </script>
+
+    <script>
+        var affilites = document.getElementById("urlAffiliate");
+        function myFunction() {
+            /* Get the text field */
+            var copyText = affilites;
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+            copyText.value;
+        };
+
+    </script>
+
+}
+<section class="container-dashboard gird-container-full padding-customer">
+    <div class="grid-container full mt-5">
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-10 medium-12 center">
+                <div class="dash-header container-medium center ">
+                    <div class="tabs tab-panel">
+                        <div class="tabs-content" data-tabs-content="example-tabs">
+                            <div class="tabs-panel is-active" id="panel1">
+                                <div class="content_panel1">
+                                    <div class="box-pages">
+                                        <div class="col-md-12 col-xs-12 col-sm-12 d-flex justify-content-center">
+                                            <input class="col-md-8 col-xs-8 col-sm-8" readonly type="text" id="urlAffiliate" style="color: black; height: 26px; font-size: 16px; text-align: center" onclick="myFunction()" value="@ViewBag.LinkAffiliate" title="@ViewBag.LinkAffiliate" />
+                                            <div class="btn-copy">
+                                                <a style="width: 8rem; height: 26px !important; margin-bottom: 25px; padding: 3px;" data-open="modal_messsager" class="btn btn-super get-link center copyeth" onclick="myFunction()">Copy Link</a>
+                                            </div>
+                                        </div>
+                                        <h2>My Affiliates (<span class="my-name" id="total_affiliate_aff"></span>)</h2>
+                                        <h5 style="font-style:italic">
+                                            UNIT: NAGA (<span class="my-name">1 NAGA = 10 $</span>)
+                                        </h5>
+                                        <h5 style="font-style: italic">
+                                            U:UserName, P:Personal bet, S:SystemBets, V:VIP
+                                        </h5>
+                                        <div class="box-pages" style="overflow-x:auto;">
+                                            <div id="tree" class="box-tree">
+                                                <span class="tree"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_messsager">
+                <div data-closable class="callout alert-callout-border success">
+                    Yay!- Copy Success!
+                    <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="_ChatSupport" />

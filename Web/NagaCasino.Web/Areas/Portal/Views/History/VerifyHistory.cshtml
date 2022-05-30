@@ -1,0 +1,35 @@
+﻿@model TechDrum.Core.Models.Authentication.VerifyCodeModel
+@{
+    Layout = "_AnonymousLayout";
+    ViewData[ViewDataKey.Title] = Messages.Auth.PageTitleVerify;
+}
+@section Styles{
+    <link rel="stylesheet" href="~/Portal/assets/css/login_register.css" />
+}
+<section class="container-form gird-container-full padding-customer">
+    <div class="grid-container full mt-5">
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-10 medium-12 center">
+                <form class="secure-form container-small validate-form m-3" asp-controller="History" asp-action="SubmitVerifyHistory">
+                    <input asp-for="Username" hidden />
+                    <div asp-validation-summary="ModelOnly" class="textred"></div>
+                    <div class="import">
+                        <label style="text-align:left">
+                            <strong>Code*</strong>
+                            <input asp-for="Code" value="" type="number" placeholder="&#xf007; Typo your verify code" style="font-family:Arial, FontAwesome" aria-describedby="exampleHelpText" pattern="alpha_numeric" required>
+                            <span asp-validation-for="Code" class="textred"></span>
+                        </label>
+                    </div>
+                    <div class="summit">
+                        <button class="btn" type="submit"><span>Verify</span></button>
+                        @*<p class="text-center">Do have an account?<a asp-area="Portal" asp-controller="Auth" asp-action="SignIn"> Sign In?</a></p>*@
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts {
+    <script src="~/js/Load/Load.js"></script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

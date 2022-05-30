@@ -1,0 +1,61 @@
+﻿@using TechDrum.Web.Areas.Portal.Views.Profile
+@model TechDrum.Core.ViewModels.LoginWith2FaViewModel
+@{
+    ViewData["Title"] = "Reset authenticator key";
+    ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
+}
+
+<link rel="stylesheet" href="~/Portal/assets/css/setting_account.css"/>
+<section class="container-dashboard gird-container-full change-password padding-customer-1">
+    <div class="grid-container full mt-5">
+        <div class="grid-x grid-padding-x">
+            <div class="cell">
+                <div class="dash-header container-medium scroll-box center">
+                    <div class="row p-3">
+                        <h2>Manage your account</h2>
+                        <label class="fs-5">Change your account settings</label>
+                        <hr/>
+                        <div class="col-3 p-2 menu1">
+                            @await Html.PartialAsync("_ManageNav")
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="alert alert-warning" role="alert">
+                                <p>
+                                    <span class="glyphicon glyphicon-warning-sign"></span>
+                                    <strong>If you reset your authenticator key your authenticator app will not work until you reconfigure it.</strong>
+                                </p>
+                                <p>
+                                    This process disables 2FA until you verify your authenticator app and will also reset your 2FA recovery codes.
+                                    If you do not complete your authenticator app configuration you may lose access to your account.
+                                </p>
+                            </div>
+                            <div>
+                                <form asp-action="ResetAuthenticator" method="post" class="form-group">
+                                    <input asp-for="RememberMe" type="hidden"/>
+                                    @{
+                                        if (Model.RememberMe)
+                                        {
+                                            <div asp-validation-summary="All" class="text-danger"></div>
+                                            <div class="form-group">
+                                                <label asp-for="TwoFactorCode"></label>
+                                                <input asp-for="TwoFactorCode" autocomplete="off"/>
+                                                <span asp-validation-for="TwoFactorCode" class="text-danger"></span>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <input asp-for="TwoFactorCode" type="hidden" autocomplete="off"/>
+                                        }
+                                    }
+                                    <button class="buttoncustom btn btn-danger mt-3" type="submit" style="width: auto !important; background: red !important; color: white;">Reset authenticator key</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="_ChatSupport"/>

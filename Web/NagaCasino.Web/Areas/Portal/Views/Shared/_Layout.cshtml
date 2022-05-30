@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"] | TECHDRUM</title>
+    @{
+        await Html.RenderPartialAsync("_Meta");
+        await Html.RenderPartialAsync("Assets/_TopScript");
+        await Html.RenderPartialAsync("Assets/_Style");
+        await Html.RenderPartialAsync("Assets/_Dropzone");
+    }
+    @(await RenderSectionAsync("Styles", false))
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <partial name="Menu/_Header" />
+    @RenderBody()
+    @{
+        await Html.RenderPartialAsync("Assets/_BottomScript");
+    }
+    @await RenderSectionAsync("Scripts", false)
+
+    @{
+        await Html.RenderPartialAsync("Menu/_Footer");
+    }
+
+    <!--Alert sweet-->
+    <script src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+
+</body>
+</html>

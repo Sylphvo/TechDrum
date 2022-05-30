@@ -1,0 +1,71 @@
+﻿@model TechDrum.Core.Models.Authentication.SignUpModel
+@{
+    Layout = "_AnonymousLayout";
+    ViewData[ViewDataKey.Title] = Messages.Auth.PageTitleSignUp;
+}
+@section Styles{
+    <link rel="stylesheet" href="~/Portal/assets/css/login_register.css" />
+
+}
+<section class="container-form gird-container-full padding-customer">
+    <div class="grid-container full mt-5">
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-10 medium-12 center">
+                <form class="secure-form container-small validate-form m-3" id="formSignUp" asp-controller="Auth" asp-action="SubmitSignUp">
+                    <input asp-for="Continue" value="signup" hidden />
+                    <div asp-validation-summary="ModelOnly" class="textred"></div>
+                    <div class="import">
+                        <label style="text-align:left">
+                            <strong>Email*</strong>
+                            <input asp-for="Email" value="" type="email" placeholder="&#xf0e0; Typo your email" style="font-family:Arial, FontAwesome" required>
+                            <span asp-validation-for="Email" class="textred"></span>
+                        </label>
+                        <label style="text-align:left">
+                            <strong>Username*</strong>
+                            <input asp-for="Login" value="" type="text" placeholder="&#xf007; Typo your username" style="font-family:Arial, FontAwesome" aria-describedby="exampleHelpText" pattern="alpha_numeric" required>
+                            <span asp-validation-for="Login" class="textred"></span>
+                        </label>
+                        <label style="text-align:left">
+                            <strong>Password*</strong>
+                            <input asp-for="Password" value="" type="password" id="password" placeholder="&#xf023; Typo your Password" style="font-family:Arial, FontAwesome" aria-describedby="exampleHelpText" required>
+                            <span asp-validation-for="Password" class="textred"></span>
+                        </label>
+                        <label style="text-align:left">
+                            <strong>Confirm password*</strong>
+                            <input asp-for="ConfirmPassword" value="" type="password" placeholder="&#xf023; Typo your Confirm Password" style="font-family:Arial, FontAwesome" aria-describedby="exampleHelpText2" pattern="alpha_numeric" data-equalto="password" required>
+                            <span asp-validation-for="ConfirmPassword" class="textred"></span>
+                        </label>
+                        @{
+                            if (Model.AffiliatesId == null)
+                            {
+
+                                <label style="text-align:left">
+                                    <strong>Affiliate ID*</strong>
+                                    <input asp-for="AffiliatesId" value="" type="text" placeholder="&#xf1ea; Typo your presenter" style="font-family:Arial, FontAwesome" required>
+                                    <span asp-validation-for="AffiliatesId" class="textred"></span>
+                                </label>
+                            }
+                            else
+                            {
+                                <label style="text-align:left">
+                                    <strong>Affiliate ID*</strong>
+                                    <input asp-for="AffiliatesId" value="@Model.AffiliatesId" type="text" placeholder="&#xf1ea; Typo your presenter" style="font-family:Arial, FontAwesome" readonly required>
+                                    <span asp-validation-for="AffiliatesId" class="textred"></span>
+                                </label>
+                            }
+                        }
+                    </div>
+                    <div class="summit">
+                        <button id="btnSignUp" class="btn" type="submit"><span>Sign Up</span></button>
+                       
+                        <p class="text-center">Do have an account?<a asp-area="Portal" asp-controller="Auth" asp-action="SignIn"> Sign In?</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts {
+    <script src="~/js/Load/Load.js"></script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

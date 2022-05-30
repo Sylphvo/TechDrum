@@ -1,0 +1,36 @@
+D:\SVNN\The Best\New folder\Cross\NagaCasino.Core\bin\Debug\net5.0\NagaCasino.Core.deps.json
+D:\SVNN\The Best\New folder\Cross\NagaCasino.Core\bin\Debug\net5.0\NagaCasino.Core.dll
+D:\SVNN\The Best\New folder\Cross\NagaCasino.Core\bin\Debug\net5.0\ref\NagaCasino.Core.dll
+D:\SVNN\The Best\New folder\Cross\NagaCasino.Core\bin\Debug\net5.0\NagaCasino.Core.pdb
+D:\SVNN\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.csproj.AssemblyReference.cache
+D:\SVNN\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\SVNN\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.AssemblyInfoInputs.cache
+D:\SVNN\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.AssemblyInfo.cs
+D:\SVNN\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.csproj.CoreCompileInputs.cache
+D:\SVNN\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.dll
+D:\SVNN\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\ref\NagaCasino.Core.dll
+D:\SVNN\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.pdb
+D:\Me\Source Code\The Best\New folder\Cross\NagaCasino.Core\bin\Debug\net5.0\NagaCasino.Core.deps.json
+D:\Me\Source Code\The Best\New folder\Cross\NagaCasino.Core\bin\Debug\net5.0\NagaCasino.Core.dll
+D:\Me\Source Code\The Best\New folder\Cross\NagaCasino.Core\bin\Debug\net5.0\NagaCasino.Core.pdb
+D:\Me\Source Code\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.csproj.AssemblyReference.cache
+D:\Me\Source Code\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Me\Source Code\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.AssemblyInfoInputs.cache
+D:\Me\Source Code\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.AssemblyInfo.cs
+D:\Me\Source Code\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.csproj.CoreCompileInputs.cache
+D:\Me\Source Code\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.dll
+D:\Me\Source Code\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\refint\NagaCasino.Core.dll
+D:\Me\Source Code\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.pdb
+D:\Me\Source Code\The Best\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\ref\NagaCasino.Core.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Cross\NagaCasino.Core\bin\Debug\net5.0\NagaCasino.Core.deps.json
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Cross\NagaCasino.Core\bin\Debug\net5.0\NagaCasino.Core.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Cross\NagaCasino.Core\bin\Debug\net5.0\NagaCasino.Core.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.csproj.AssemblyReference.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.AssemblyInfoInputs.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.AssemblyInfo.cs
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.csproj.CoreCompileInputs.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\refint\NagaCasino.Core.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\NagaCasino.Core.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Cross\NagaCasino.Core\obj\Debug\net5.0\ref\NagaCasino.Core.dll

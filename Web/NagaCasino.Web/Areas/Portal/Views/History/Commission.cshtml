@@ -1,0 +1,125 @@
+﻿@using TechDrum.Core.Utils
+@using TechDrum.Web.Areas.Portal.Views.History
+@using TechDrum.Core.Commons
+@model PaginatedList<TechDrum.Core.Models.User.UserHistoryModel>
+@{
+    Layout = "_Layout";
+    ViewData[ViewDataKey.Title] = Messages.History.PageTitleTransaction;
+    var varNameURL = FundistHelper.ClientConfigs.BaseUrlPortal;
+    ViewData.AddActivePage(Button.Commission);
+}
+@section Styles{
+    <link rel="stylesheet" href="~/Portal/assets/css/transactions.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Portal/assets/css/datatables.min.css" />
+    <link rel="stylesheet" href="/Portal/assets/css/setting_account.css" />
+    <link rel="stylesheet" href="~/Portal/assets/css/login_register.css" />
+}
+@section scripts{
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    @*<link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap.min.css">*@
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Portal/assets/js/datatables.min.js" defer></script>
+    <script>
+var varNameURL = '@varNameURL'
+        var username = '@Context.User.Identity.Name';
+    </script>
+    <script type="text/javascript" src="/js/AccountDashboard/handler.history.min.js"></script>
+    @*<script type="text/javascript">
+            $(document).ready(function () {
+                $('#Commission').DataTable({
+                    columnDefs: [{ 'targets': 2, type: 'date-euro' }],
+                    order: [2, 'desc'],
+                });
+            });
+        </script>*@
+}
+
+<section class="container-dashboard gird-container-full change-password padding-customer">
+    <div class="grid-container full mt-5">
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-10 medium-12 center">
+                <div class="dash-header center ">
+                    <div class="tabs tab-panel">
+                        @*<ul class="tabs button_top" data-tabs id="example-tabs">
+                                <li class="tabs-title is-active"><a class="btn-panel button_select" href="#panel1" aria-selected="true">Transaction</a></li>
+                                <li class="tabs-title"><a class="btn-panel button_select" href="#panel3">Check TxHash</a></li>
+                            </ul>*@
+                        <div class="tabs-content" data-tabs-content="example-tabs">
+                            <div class="tabs-panel is-active" id="panel1">
+                                <div class="content_panel1">
+                                    <div class="import">
+                                        <div class="box-pages">
+                                            <h2 class="title-history">Select your transactions</h2>
+                                            @await Html.PartialAsync("_Button")
+
+                                            <div class="cell large-10 medium-12 center">
+                                                <h3 class="titleaa"> COMMISSION</h3>
+                                                <table id="Commission" class="scroll table table-hover table-bordered dataTable no-footer" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Code</th>
+                                                            <th>Week</th>
+                                                            <th>Amount</th>
+                                                            <th>Vip</th>
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @foreach (var item in Model)
+                                                        {
+                                                            <tr>
+                                                                <td title="@item.TransactionId">@item.TransactionId.Substring(0, 8)</td>
+                                                                <td>@item.Week</td>
+                                                                <td>@item.Amount NAGA</td>
+                                                                <td>@item.Levels </td>
+                                                                <td>@item.Status</td>
+                                                            </tr>
+                                                        }
+
+                                                    </tbody>
+                                                </table>
+                                                @{
+                                                    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+                                                    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+                                                }
+                                                <div class="main">
+                                                    <a asp-action="ETH"
+                                                       asp-route-sortOrder="@ViewData["CurrentSort"]"
+                                                       asp-route-pageNumber="@(Model.PageIndex - 1)"
+                                                       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                                                       class="btn btn-default @prevDisabled">
+                                                        Previous
+                                                    </a>
+                                                    <a asp-action="ETH"
+                                                       asp-route-sortOrder="@ViewData["CurrentSort"]"
+                                                       asp-route-pageNumber="@(Model.PageIndex + 1)"
+                                                       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                                                       class="btn btn-default @nextDisabled">
+                                                        Next Page
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="_ChatSupport" />
+<script type="text/javascript" src="~/js/Load/Load.js"></script>
+
+
+
+
+
+
+

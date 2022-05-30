@@ -1,0 +1,42 @@
+﻿<section class="header" data-sticky-container style="background-color: #0b0e11;">
+    <div class="scroll-bar" data-sticky data-options="marginTop:0; style=" width:100%"">
+        <div class="grid-container full">
+            <div class="grid-x grid-padding-x">
+                <div class="cell large-10 medium-12 center">
+                    <div class="box-bar" data-responsive-toggle="example-menu" data-hide-for="large">
+                        <h1 class="sp"><a asp-area="Portal" asp-controller="Home" asp-action="Index"><img src="~/Portal/assets/images/logo.png" alt=""></a></h1>
+                        <span class="my-name"></span>
+                        <div class="toggle" data-toggle="example-menu">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                    </div>
+                    <nav>
+                        <div id="example-menu" class="navheader">
+                            <h1 class="logo"><a asp-area="Portal" asp-controller="Home" asp-action="Index"><img src="~/Portal/assets/images/logo.png" alt=""></a></h1>
+                            <ul class="menu" data-responsive-menu="accordion medium-dropdown">
+                                <li>
+                                    <a href="/affiliate-marketing">My Affilliate</a>
+                                </li>
+                                @*<li>
+                                    <a href="/promotion">Promotion</a>
+                                </li>*@
+                            </ul>
+                            <div class="login">
+                                <ul class="menu">
+                                    <li>
+                                        <a class="btn btn-black m-3" asp-area="Portal" asp-controller="Auth" asp-action="SignIn">Login</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-black m-3" asp-area="Portal" asp-controller="Auth" asp-action="SignUp">Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

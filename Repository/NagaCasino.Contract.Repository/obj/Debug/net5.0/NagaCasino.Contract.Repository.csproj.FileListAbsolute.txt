@@ -1,0 +1,45 @@
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Contract.Repository.deps.json
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Contract.Repository.dll
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\ref\NagaCasino.Contract.Repository.dll
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Contract.Repository.pdb
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Core.dll
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Core.pdb
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.csproj.AssemblyReference.cache
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.AssemblyInfoInputs.cache
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.AssemblyInfo.cs
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.csproj.CoreCompileInputs.cache
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.csproj.CopyComplete
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.dll
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\ref\NagaCasino.Contract.Repository.dll
+D:\SVNN\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.pdb
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Contract.Repository.deps.json
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Contract.Repository.dll
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Contract.Repository.pdb
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Core.dll
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Core.pdb
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.csproj.AssemblyReference.cache
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.AssemblyInfoInputs.cache
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.AssemblyInfo.cs
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.csproj.CoreCompileInputs.cache
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.csproj.CopyComplete
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.dll
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\refint\NagaCasino.Contract.Repository.dll
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.pdb
+D:\Me\Source Code\The Best\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\ref\NagaCasino.Contract.Repository.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Contract.Repository.deps.json
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Contract.Repository.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Contract.Repository.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Core.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\bin\Debug\net5.0\NagaCasino.Core.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.csproj.AssemblyReference.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.AssemblyInfoInputs.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.AssemblyInfo.cs
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.csproj.CoreCompileInputs.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.csproj.CopyComplete
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\refint\NagaCasino.Contract.Repository.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\NagaCasino.Contract.Repository.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Repository\NagaCasino.Contract.Repository\obj\Debug\net5.0\ref\NagaCasino.Contract.Repository.dll

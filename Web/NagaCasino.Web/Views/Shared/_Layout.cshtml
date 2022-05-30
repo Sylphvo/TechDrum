@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+     <title>@ViewData["Title"] | TECHDRUM</title>
+    <link rel="icon" href="/img/favicon.png" type="image/png">
+    @(await RenderSectionAsync("Styles", false))
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    @*<!-- preloader -->
+    <div class="preloader-wrapper" id="preloader-wrapper">
+        <div class="percentage-wrapper">
+            <div class="loadbar-percent"></div>
+            <div id="percent"></div>
+        </div>
+    </div>
+    <!-- preloader end -->*@
+    @{
+        await Html.RenderPartialAsync("_Header");
+    }
+    @RenderBody()
+    @{
+        await Html.RenderPartialAsync("_Footer");
+    }
+    @*<partial name="_NewsletterModal" />*@
+    @await RenderSectionAsync("Scripts", required: false)
+
+
+</body>
+
+</html>

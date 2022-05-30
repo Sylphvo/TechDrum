@@ -1,0 +1,26 @@
+﻿<div class="modal reveal insert-max deposit2modal" id="deposit_modal_usdx" data-keyboard="false" data-backdrop="static" style="width:45%;padding-left:0px;">
+    <h4 style="font-size: 20px;"><img class="d-inline-block" src="~/Portal/assets/images/logo.png" height="30" width="30" /> NAGA CLUBS</h4>
+    <div class="content-deposit">
+        <h4 class="mt-3" style="font-size: 1rem;">DEPOSIT ETH <b style="color: #f0b90b">(ERC20)</b></h4>
+        <div>
+            <div class="content_modal">
+                <p style="font-size:0.875rem">This deposit address only accepts ETH <b style="color: #f0b90b">(ERC20)</b></p>
+                <div id="qrcode"></div>
+                <form class="balance-form m-3">
+                    <label class="amount ">
+                        <textarea style="padding-right: 1rem; -webkit-box-shadow: none; border: 0px solid #eee0; background: #f0f8ff00; overflow: hidden;resize:none;" title="" value="" class="withdraw-value center" id="addressETH"type="text" readonly></textarea>
+                    </label>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <input style="background: #f0f8ff00; border: none;" class="close-button" data-dismiss="modal" data-close aria-label="Close reveal" value="x" type="button" />
+    <p style="margin-bottom:0px;font-size:12px;"><i>Please double check your wallet address before deposit</i></p>
+    <p style="margin-bottom: 0px; font-size: 12px;"><i>Deposit min 0.02 ETH</i></p>
+    <p style="margin-bottom: 0px; font-size: 12px;"><i>When you deposit you need 15 confirmations from wallet</i></p>
+    <div style="margin:0.5rem auto">
+        <a data-open="modal_messsager_balance_error" class="copyeth btn btn-default fill-max-amount" onclick="myFunction()"> <i class="fas fa-copy"></i></a>
+        <label class="fs-6">Copy</label>
+    </div>
+</div>

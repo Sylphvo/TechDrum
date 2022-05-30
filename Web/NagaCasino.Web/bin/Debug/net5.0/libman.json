@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "defaultProvider": "jsdelivr",
+  "libraries": [
+    {
+      "library": "bootstrap@5.0.1",
+      "destination": "wwwroot/lib/bootstrap/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jquery@3.6.0",
+      "destination": "wwwroot/lib/jquery/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jquery-validation-unobtrusive@3.2.12",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "jquery-validation@1.19.3",
+      "destination": "wwwroot/lib/jquery-validation/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "popper.js@2.9.2",
+      "destination": "wwwroot/lib/popper/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "font-awesome@5.15.3",
+      "destination": "wwwroot/lib/font-awesome/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "animate.css@4.1.1",
+      "destination": "wwwroot/lib/animate.css/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "animsition@4.0.2",
+      "destination": "wwwroot/lib/animsition/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "modernizr@3.5.0",
+      "destination": "wwwroot/lib/modernizr/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "scrollReveal.js@4.0.9",
+      "destination": "wwwroot/lib/scrollReveal.js/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "slick@1.12.2",
+      "destination": "wwwroot/lib/slick/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "w3-css@4.1.0",
+      "destination": "wwwroot/lib/w3-css/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "@aspnet/signalr@1.0.3",
+      "destination": "wwwroot/lib/signalr/"
+    },
+    {
+      "library": "clipboard@2.0.8",
+      "destination": "wwwroot/lib/clipboard/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "datatables@1.10.21",
+      "destination": "wwwroot/lib/datatables/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "qrcodejs@1.0.0",
+      "destination": "wwwroot/lib/qrcodejs/"
+    }
+  ]
+}

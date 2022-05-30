@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Web", "1. Web", "{282C9810-9F98-4092-AFA6-98F1C63239C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Service", "2. Service", "{2015D3C9-E11F-47ED-B000-CAA22A3E9E18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Repository", "3. Repository", "{A2FF30AF-70B4-4758-9E10-50958FB5F61A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Cross", "4. Cross", "{0247D965-4ABC-4351-BF8C-0DD5C870DB4E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechDrum.Core", "Cross\NagaCasino.Core\TechDrum.Core.csproj", "{42004A04-005A-4B9E-A2A2-ACF993B2CAD8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechDrum.Contract.Repository", "Repository\NagaCasino.Contract.Repository\TechDrum.Contract.Repository.csproj", "{5A1481AE-1E8A-449A-87CB-139B685524E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechDrum.Repository", "Repository\NagaCasino.Repository\TechDrum.Repository.csproj", "{28410DC7-716A-4216-9B58-0FCB3AF95F9E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechDrum.Contract.Service", "Service\NagaCasino.Contract.Service\TechDrum.Contract.Service.csproj", "{8155D228-3379-4540-B5C7-ED5E7FF5235F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechDrum.Service", "Service\NagaCasino.Service\TechDrum.Service.csproj", "{444730AA-F6A8-4692-99BA-A6E8756B99B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechDrum.Web", "Web\NagaCasino.Web\TechDrum.Web.csproj", "{7BFCF7FB-99AF-4D88-B6A6-857DCCD85C3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42004A04-005A-4B9E-A2A2-ACF993B2CAD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42004A04-005A-4B9E-A2A2-ACF993B2CAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42004A04-005A-4B9E-A2A2-ACF993B2CAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42004A04-005A-4B9E-A2A2-ACF993B2CAD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A1481AE-1E8A-449A-87CB-139B685524E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A1481AE-1E8A-449A-87CB-139B685524E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A1481AE-1E8A-449A-87CB-139B685524E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A1481AE-1E8A-449A-87CB-139B685524E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28410DC7-716A-4216-9B58-0FCB3AF95F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28410DC7-716A-4216-9B58-0FCB3AF95F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28410DC7-716A-4216-9B58-0FCB3AF95F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28410DC7-716A-4216-9B58-0FCB3AF95F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8155D228-3379-4540-B5C7-ED5E7FF5235F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8155D228-3379-4540-B5C7-ED5E7FF5235F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8155D228-3379-4540-B5C7-ED5E7FF5235F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8155D228-3379-4540-B5C7-ED5E7FF5235F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{444730AA-F6A8-4692-99BA-A6E8756B99B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{444730AA-F6A8-4692-99BA-A6E8756B99B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{444730AA-F6A8-4692-99BA-A6E8756B99B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{444730AA-F6A8-4692-99BA-A6E8756B99B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BFCF7FB-99AF-4D88-B6A6-857DCCD85C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BFCF7FB-99AF-4D88-B6A6-857DCCD85C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BFCF7FB-99AF-4D88-B6A6-857DCCD85C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BFCF7FB-99AF-4D88-B6A6-857DCCD85C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{42004A04-005A-4B9E-A2A2-ACF993B2CAD8} = {0247D965-4ABC-4351-BF8C-0DD5C870DB4E}
+		{5A1481AE-1E8A-449A-87CB-139B685524E5} = {A2FF30AF-70B4-4758-9E10-50958FB5F61A}
+		{28410DC7-716A-4216-9B58-0FCB3AF95F9E} = {A2FF30AF-70B4-4758-9E10-50958FB5F61A}
+		{8155D228-3379-4540-B5C7-ED5E7FF5235F} = {2015D3C9-E11F-47ED-B000-CAA22A3E9E18}
+		{444730AA-F6A8-4692-99BA-A6E8756B99B8} = {2015D3C9-E11F-47ED-B000-CAA22A3E9E18}
+		{7BFCF7FB-99AF-4D88-B6A6-857DCCD85C3D} = {282C9810-9F98-4092-AFA6-98F1C63239C6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C863AF9A-90FE-4FC5-91F4-59E5B67B84EB}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,44 @@
+﻿
+<div class="modal reveal insert-max witthdraw2modal" id="withdraw_modal_eth" data-keyboard="false" data-backdrop="static" style=" padding: 3.33333rem 1rem; padding: 1rem; margin-top: 0% !important; top: 3% !important;  padding-left: 0rem !important;">
+    <div class="content_modal">
+        <h4 style="font-size: 20px;">WITHDRAW</h4>
+        <p>Available Withdraw: (<span id="Available_Withdraw"></span><span id="rateEth"></span>)</p>
+        <form class="balance-form m-3">
+            <label class="amount">
+                <label for="cars">Crypto</label>
+                <select id="check_wallet" class="select-naga p-1" onchange="checkwallet()">
+                    @*<option value="notype" >Please select wallet type</option>*@
+                    <option class="active" value="ETH">ETH</option>
+                    @*<option value="USDT">USDT/TRC20</option>*@
+                </select>
+            </label>
+
+            <label class="amount">
+                Amount (NAGA)
+                <input placeholder=" Amount*" class="withdraw-value p-1" @*onblur="Withdraw_sub()"*@ id="withdraw_amount_eth" value="" autocomplete="off" name="amount" step="0.1" type="tel" min="0.02" required pattern="^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$">
+                <span id="maxwithdraw" class="btn fill-max-amount" onclick="maxWidthETH()">Max</span>
+            </label>
+
+            <label class="amount">
+                Address Withdraw
+                <input style="width:100%" id="address_Widthdraw" name="address_Widthdraw" type="text" value="" autocomplete="off" required placeholder="Address">
+            </label>
+
+            @if (Model.TwoFactorEnabled)
+            {
+                <p class="m-0">2FA Code: </p><input style="width:100%" id="2fa-Widthdraw" name="2FA-Widthdraw" type="text" value="">
+                <br />
+            }
+            else
+            {
+                <input style="width:100%" id="2fa-Widthdraw p-1" name="2FA-Widthdraw" type="text" value="" hidden>
+                <br />
+            }
+            <p class="note">Note: Due to Ethereum system high volume transaction and gas fee affect withdrawals system so Withdrawals Fee Policy change <span style="font-style:italic;color:black;">(Gas fee)</span></p>
+            <p class="note">Min Withdraw <span style="font-style:italic;" @*id="Widthdraw_Min"*@>0.02</span> <span style="font-style:italic;"> ETH</span></p>
+            <a class="link-naga note"href="/policy" target="_blank">POLICY **</a>
+        </form>
+        <a id="button_WidthdrawETH" style="height: auto; padding: 8px;">Withdraw</a>
+        <input style="background: #f0f8ff00; border: none;" class="close-button" data-dismiss="modal" data-close aria-label="Close reveal" value="x" type="button" />
+    </div>
+</div>

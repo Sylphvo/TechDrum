@@ -1,0 +1,60 @@
+﻿@using TechDrum.Web.Areas.Portal.Views.Profile
+@model TechDrum.Core.ViewModels.LoginWith2FaViewModel
+@{
+    ViewData["Title"] = "Disable two-factor authentication (2FA)";
+    ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
+}
+<link rel="stylesheet" href="~/Portal/assets/css/setting_account.css" />
+<section class="container-dashboard gird-container-full change-password padding-customer-1">
+    <div class="grid-container full mt-5">
+        <div class="grid-x grid-padding-x">
+            <div class="cell">
+                <div class="dash-header container-medium scroll-box center">
+                    <div class="row p-3">
+                        <h2>Manage your account</h2>
+                        <label class="fs-5">Change your account settings</label>
+                        <hr />
+                        <div class="col-3 p-2 menu1">
+                            @await Html.PartialAsync("_ManageNav")
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="alert alert-warning" role="alert">
+                                <p>
+                                    <span class="glyphicon glyphicon-warning-sign"></span>
+                                    <strong>This action only disables 2FA.</strong>
+                                </p>
+                                <p>
+                                    Disabling 2FA does not change the keys used in authenticator apps. If you wish to change the key
+                                    used in an authenticator app you should
+                                    <a asp-action="ResetAuthenticatorWarning">
+                                        reset your
+                                        authenticator keys.
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div>
+                                <form asp-action="Disable2fa" method="post" class="form-group mt-3">
+
+                                    <div class="form-group">
+                                        <label asp-for="TwoFactorCode"></label>
+                                        <input type="text" asp-for="TwoFactorCode" autocomplete="off" />
+                                        <div asp-validation-summary="All" class="text-danger mt-3"></div>
+                                        @*<span asp-validation-for="TwoFactorCode" class="text-danger"></span>*@
+                                    </div>
+
+                                    <button class="buttoncustom btn btn-danger mt-3" type="submit" style="width: auto !important; background: red !important; color: white;">Disable 2FA</button>
+                                    <a class="buttoncustom btn btn-danger mt-3" asp-action="TwoFactorAuthentication" style="width: auto !important; background: #eee !important; color: black; border: 1px solid #eee; margin-right: 1rem; ">Back</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
+<partial name="_ChatSupport" />

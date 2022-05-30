@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData[ViewDataKey.Title] = Messages.LiveGame.PageTitleLiveGame;
+}
+@section Styles{
+    <link rel="stylesheet" href="~/Portal/assets/css/live_play.min.css" />
+}
+<style>
+    embed#casinoGame {
+        width: 100%;
+        height: 88vh;
+    }
+
+    @@media only screen and (max-width: 479px) and (min-width: 320px) {
+        .game_detailCustom {
+            margin-top: 115px;
+            height: auto;
+        }
+    }
+
+    #casinoGame {
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+   /* body.showSwipeToPlay {
+        overflow: hidden;
+    }*/
+</style>
+<section class="livegames">
+    <div class="grid-container full">
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-10 medium-12 center">
+                <div class="live_pages scroll-box">
+                    <div class="box-games">
+                        <div class="game-details">
+                            <div class="container game_detailCustom" style="">
+                                <div class="row" style="height: 100vh;">
+                                    @if (ViewBag.DirectUrl != null)
+                                    {
+                                        <embed id="casinoGame" allowfullscreen="true" src="@ViewBag.DirectUrl" height="" width="100%" />
+                                    }
+                                    else
+                                    {
+                                        @Html.Raw(((string)(ViewBag.HTMLUrl.Replace("<iframe", "<iframe id='height_custom' height='' width='100%'"))))
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,6 @@
+{
+
+  "ConnectionStrings": {
+    "Development": "Data Source=libratech.eastus.cloudapp.azure.com;Initial Catalog=naga-casino-client-player-migration;User ID=naga-app;Password=naga@2021az"
+  }
+}

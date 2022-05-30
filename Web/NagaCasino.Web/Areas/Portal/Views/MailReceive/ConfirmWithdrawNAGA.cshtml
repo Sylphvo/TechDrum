@@ -1,0 +1,55 @@
+﻿@model TechDrum.Core.Models.AuthenSso.ConfirmTranModel
+@{
+    ViewData["Title"] = "ConfirmWithdrawNAGA";
+    Layout = "~/Areas/Portal/Views/Shared/_AnonymousLayout.cshtml";
+}
+<section class="container-form gird-container-full padding-customer">
+    <div class="container pt-3">
+        <div class="card">
+            <div class="card-header">
+                <h3 style="text-align:center">Infor Transaction Transfer Naga</h3>
+            </div>
+            <div class="card-body">
+                <form asp-action="SubmitConfirmWithdrawNAGA" asp-controller="MailReceive" class="form-group m-3" method="post">
+                    <input asp-for="@Model.token.token" value="@Model.token.token" type="text" class="form-control" id="code" hidden>
+                    <input asp-for="@Model.token.transId" value="@Model.token.transId" type="text" class="form-control" id="code" hidden>
+                    <input asp-for="@Model.strToken" value="@Model.strToken" type="text" class="form-control" id="code" hidden>
+                    <input asp-for="@Model.token.timeStamp" value="@Model.token.timeStamp" type="text" class="form-control" id="code" hidden>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="code">Receiver</label>
+                            <input asp-for="@Model.data.toAddress" value="@Model.data.toAddress" type="text" class="form-control" id="toAddress" readonly>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="address">Date</label>
+                            <input asp-for="@Model.data.createdTime" value="@Model.data.createdTime" type="text" class="form-control" id="expired" readonly>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="fromNaga">Amount Executed</label>
+                            <input asp-for="@Model.data.amountExecuted" value="@Model.data.amountExecuted" type="text" class="form-control" id="fromNaga" readonly>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="toEth">Fee</label>
+                            <input asp-for="@Model.data.fee" value="@Model.data.fee" type="text" class="form-control" id="fee" readonly>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="fee">Status</label>
+                            <input asp-for="@Model.data.status" value="@Model.data.status" type="text" class="form-control" id="Fee" readonly>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="date">Type</label>
+                            <input asp-for="@Model.data.type" value="@Model.data.type" type="text" class="form-control" id="Date" readonly>
+                        </div>
+                        @*<span class="mt-1">Note**: asfsdfsdfdsfdsfdfdsfsdfdsff</span>*@
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <button type="submit" class="btn btn-success mt-3">Confirm</button>
+                        <a href="/signin" class="btn btn-danger mt-3">Back</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+

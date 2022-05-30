@@ -1,0 +1,44 @@
+﻿@model TechDrum.Core.Models.Authentication.AuthorizeModel
+@{
+    Layout = "_AnonymousLayout";
+    ViewData[ViewDataKey.Title] = Messages.Auth.PageTitleSignIn;
+}
+@section Styles{
+    <link rel="stylesheet" href="~/Portal/assets/css/login_register.css" />
+
+}
+<section class="container-form gird-container-full padding-customer">
+    <div class="grid-container full mt-5">
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-10 medium-12 center">
+                <form class="secure-form container-small validate-form m-3" id="formSignIn" asp-controller="Auth" asp-action="SubmitSignIn">
+                    <input asp-for="Continue" value="signin" hidden />
+                    <input asp-for="Url" value="@Model.Url" hidden />
+                    <div asp-validation-summary="ModelOnly" class="textred"></div>
+                    <div class="import">
+                        <label style="text-align:left">
+                            <strong>Username*</strong>
+                            <input asp-for="Login" type="text" name="Login" placeholder="&#xf007; Typo your username" style="font-family:Arial, FontAwesome" />
+                            <span asp-validation-for="Login" class="textred"></span>
+                        </label>
+
+                        <label style="text-align:left">
+                            <strong>Password*</strong>
+                            <input asp-for="Password" type="password" name="Password" placeholder="&#xf023; Typo your password" style="font-family:Arial, FontAwesome" />
+                            <span asp-validation-for="Password" class="textred"></span>
+                        </label>
+                        <a class="forgot_password" asp-area="Portal" asp-controller="Auth" asp-action="ForgetPassword">Forgot password?</a>
+                    </div>
+                    <div class="summit">
+                        <button class="btn" id="btnSignIn" type="submit"><span>Sign in</span></button>
+                        <p class="text-center">Don’t have an account?<a asp-area="Portal" asp-controller="Auth" asp-action="SignUp"> Sign Up?</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts {
+    <script type="text/javascript" src="~/js/Load/Load.js"></script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

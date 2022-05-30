@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Cross\NagaCasino.Core\TechDrum.Core.csproj" />
+    <ProjectReference Include="..\..\Repository\NagaCasino.Contract.Repository\TechDrum.Contract.Repository.csproj" />
+    <ProjectReference Include="..\NagaCasino.Contract.Service\TechDrum.Contract.Service.csproj" />
+  </ItemGroup>
+
+</Project>

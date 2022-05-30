@@ -1,0 +1,128 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData[ViewDataKey.Title] = Messages.History.PageTitlePolicy;
+}
+@section Styles{
+    <link rel="stylesheet" href="~/Portal/assets/css/policy.css" />
+    <link rel="stylesheet" href="~/Portal/assets/css/transactions.min.css" />
+}
+<section class="container-dashboard gird-container-full padding-customer">
+    <div class="grid-container full mt-5">
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-10 medium-12 center">
+                <div class="dash-header container-medium center scroll-box">
+                    <h3 class="title text-center">GENERAL POLICY</h3>
+                    <div class="tab-pane  show active" id="pills-all-bets" aria-labelledby="pills-all-bets-tab">
+                        <p id="policy" class="text-left">
+                            <i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;Last Deposit: Your amount last time Deposit ETH or receive NAGA<br />
+                            <i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;Minimum transaction 2 NAGA<br />
+                        </p>
+                    </div>
+                    <h3 class="title text-center">Withdraw</h3>
+                    <div class="tab-pane  show active p-3" id="pills-all-bets" aria-labelledby="pills-all-bets-tab">
+                        @*<p id="policy" class="text-left">
+                            <i class="fa fa-cog text-left" aria-hidden="true"></i>&nbsp;EXCHANGE NAGA TO ETH<br>
+                        </p>*@
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Limit Daily</td>
+                                    <td>Last Deposit</td>
+                                </tr>
+                                <tr>
+                                    <td>Limit transaction</td>
+                                    <td>200 NAGA</td>
+                                </tr>
+                                <tr>
+                                    <td>Limit Weekly</td>
+                                    <td>1,000 NAGA</td>
+                                </tr>
+                                <tr>
+                                    <td>Fee</td>
+                                    <td>1% + GasFee</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        @*<p id="policy" class="text-left">
+                            <i class="fa fa-cog text-left" aria-hidden="true"></i>&nbsp;EXCHANGE ETH TO NAGA<br>
+                        </p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Limit Daily</td>
+                                    <td>NO Limit</td>
+                                </tr>
+                                <tr>
+                                    <td>Limit transaction</td>
+                                    <td>NO Limit</td>
+                                </tr>
+                                <tr>
+                                    <td>Limit Weekly</td>
+                                    <td>NO Limit</td>
+                                </tr>
+                                <tr>
+                                    <td> Fee</td>
+                                    <td>NO Fee</td>
+                                </tr>
+                            </tbody>
+                        </table>*@
+                    </div>
+                    <h3 class="title text-center">Transfer</h3>
+                    <div class="tab-pane p-3" id="pills-my-bets" aria-labelledby="pills-my-bets-tab">
+                        @*<p id="policy" class="text-left">
+                            <i class="fa fa-cog text-left" aria-hidden="true"></i>&nbsp;WITHDRAW NAGA<br>
+                        </p>*@
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Limit Daily</td>
+                                    <td>Last Deposit</td>
+                                </tr>
+                                <tr>
+                                    <td>Limit transaction</td>
+                                    <td>200 NAGA</td>
+                                </tr>
+                                <tr>
+                                    <td>Limit Weekly</td>
+                                    <td>1,000 NAGA</td>
+                                </tr>
+                                <tr>
+                                    <td>Fee</td>
+                                    <td>1% On Receiver</td>
+                                </tr>
+                                <tr>
+                                    <td> Condition</td>
+                                    <td>Withdraw to active Username account</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        @*<p id="policy" class="text-left">
+                            <i class="fa fa-cog" aria-hidden="true"></i>&nbsp;WITHDRAW ETH<br>
+                        </p>*@
+                        @*<table>
+                            <tbody>
+                                <tr>
+                                    <td>Limit Daily</td>
+                                    <td>No Limit</td>
+                                </tr>
+                                <tr>
+                                    <td>Limit transaction</td>
+                                    <td>No Limit</td>
+                                </tr>
+                                <tr>
+                                    <td>Limit Weekly</td>
+                                    <td>No Limit</td>
+                                </tr>
+                                <tr>
+                                    <td> Fee</td>
+                                    <td>Gas fee</td>
+                                </tr>
+                            </tbody>
+                        </table>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="_ChatSupport" />

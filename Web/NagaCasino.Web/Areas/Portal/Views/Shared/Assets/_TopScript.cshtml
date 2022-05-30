@@ -1,0 +1,43 @@
+﻿<script src="~/lib/jquery/jquery.js"></script>
+<script src="~/lib/popper/umd/popper.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+<script>
+    var global = {};
+
+    @*global.currentUser = @loggedInUserJson;
+
+    global.config = {
+        imageDeadUrl: "https://cfl.dropboxstatic.com/static/images/avatar/faceholder-vflGRnT85.svg",
+        dateTimeFormat: '@Formattings.JsDateTimeFormat',
+        dateFormat: '@Formattings.JsDateFormat',
+        timeZone: '@Formattings.TimeZone'
+    };*@
+
+    global.endpoint = {
+        api: {
+            auth: {
+                deleteRefreshToken: '@Url.Action("DeleteRefreshToken", "Auth", new {area = "Api", id = "PARAMETER_ID"})'
+            },
+            user: {
+                delete: '@Url.Action("Delete", "User", new {area = "Api", id = "PARAMETER_ID"})'
+            },
+            app: {
+                delete: '@Url.Action("Delete", "App", new {area = "Api", id = "PARAMETER_ID"})'
+            },
+            file: {
+                delete: '@Url.Action("Delete", "File", new {area = "Api", id = "PARAMETER_ID"})',
+                @*uploadMultiPart:
+                    '@Url.Action("UploadMultiPart", "File", new {area = "Api", createdByAppId = SystemHelper.Setting.ClientId})'*@
+            }
+        },
+        page: {
+            user: {
+                edit: '@Url.Action("Edit", "User", new {area = "Portal", id = "PARAMETER_ID"})'
+            },
+            app: {
+                edit: '@Url.Action("Edit", "App", new {area = "Portal", id = "PARAMETER_ID"})',
+                generateSecret: '@Url.Action("GenerateSecret", "App", new {area = "Portal", id = "PARAMETER_ID"})'
+            }
+        }
+    };
+</script>

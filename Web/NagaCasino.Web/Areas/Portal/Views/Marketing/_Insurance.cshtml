@@ -1,0 +1,21 @@
+﻿@using TechDrum.Web.Areas.Portal.Views.Marketing
+@using Microsoft.AspNetCore.Identity
+@using TechDrum.Contract.Repository.Models.User
+@inject SignInManager<UserEntity> _signInManager
+@{
+    var hasExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).Any();
+}
+<ul class="nav nav-pills nav-stacked">
+    <li class="@InsurancePages.BuyInsuranceNavClass(ViewContext) nav-item d-block  w-100 mt-2">
+        <a class="nav-link h6  border" asp-action="Index">Buy Insurance</a>
+    </li>
+    <li class="@InsurancePages.InsuranceHistoryNavClass(ViewContext) nav-item d-block w-100 mt-2">
+        <a class="nav-link h6 border" asp-action="ChangePassword">Insurance History</a>
+    </li>
+    <li class="@InsurancePages.ClaimInsuranceNavClass(ViewContext) nav-item d-block w-100  mt-2 ">
+        <a class="nav-link h6 border" asp-action="ExternalLogins">Claim Insurance</a>
+    </li>
+    <li class="@InsurancePages.ClaimHistoryNavClass(ViewContext) nav-item d-block w-100  mt-2 ">
+        <a class="nav-link h6 border " asp-action="TwoFactorAuthentication">Claim History</a>
+    </li>
+</ul>

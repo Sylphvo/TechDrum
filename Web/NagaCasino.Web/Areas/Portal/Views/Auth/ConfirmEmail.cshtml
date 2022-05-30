@@ -1,0 +1,31 @@
+﻿@model TechDrum.Core.Models.Authentication.ConfirmEmailModel
+@{
+    Layout = "_AnonymousLayout";
+    ViewData[ViewDataKey.Title] = Messages.Auth.PageTitleConfirmEmail;
+}
+@section Styles{
+    <link rel="stylesheet" href="~/Portal/assets/css/login_register.css" />
+}
+<section class="banner-image">
+    <div class="grid-container full">
+        <div class="grid-x">
+            <div class="image-banner">
+                <img src="~/Portal/assets/images/login_banner.jpg" alt="">
+            </div>
+            <div class="cell large-10 medium-12 center">
+                <div class="banner-pages scroll-box">
+                    <div class="box-intro container-small">
+                        <h2 class="title-intro">VERIFY YOUR EMAIL ADDRESS</h2>
+                        <span asp-validation-for="Email" class="text-intro" >We have sent a verification link at 123abc@@gmail.com</span>
+                        <p class="text-intro">Please verify your email address for login</p>
+                        <h4 class="text-intro">NOT RECEIVED EMAIL? <a class="authorized_resend">RESEND MAIL</a></h4>
+                        <div class="summit">
+                            <button class="btn btnprivate" type="submit" asp-area="Portal" asp-controller="Auth" asp-action="SignIn"><span>Login</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

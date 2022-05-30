@@ -1,0 +1,24 @@
+﻿@using TechDrum.Web.Areas.Portal.Views.Profile
+@using Microsoft.AspNetCore.Identity
+@using TechDrum.Contract.Repository.Models.User
+@inject SignInManager<UserEntity> _signInManager
+@{
+    var hasExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).Any();
+}
+<ul class="nav nav-pills nav-stacked">
+    <li class="@ManageNavPages.IndexNavClass(ViewContext) nav-item d-block  w-100 mt-2">
+        <a class="nav-link h6  border" asp-action="Index">Profile</a>
+    </li>
+    <li class="@ManageNavPages.ChangePasswordNavClass(ViewContext) nav-item d-block w-100 mt-2">
+        <a class="nav-link h6 border" asp-action="ChangePassword">Password</a>
+    </li>
+    @if (hasExternalLogins)
+    {
+    <li class="@ManageNavPages.ExternalLoginsNavClass(ViewContext) nav-item d-block w-100  mt-2 ">
+        <a class="nav-link h6 border" asp-action="ExternalLogins">External logins</a>
+    </li>
+    }
+    <li class="@ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext) nav-item d-block w-100  mt-2 ">
+        <a class="nav-link h6 border " asp-action="TwoFactorAuthentication">Two-factor authentication</a>
+    </li>
+</ul>

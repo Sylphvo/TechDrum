@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Invedia.Data.EF" Version="2021.4.10.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\Cross\NagaCasino.Core\TechDrum.Core.csproj" />
+	</ItemGroup>
+
+</Project>

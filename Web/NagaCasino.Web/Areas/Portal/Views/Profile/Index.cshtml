@@ -1,0 +1,65 @@
+﻿@using TechDrum.Web.Areas.Portal.Views.Profile
+@model TechDrum.Core.ViewModels.ProfileViewModels.IndexViewModel
+@{
+    ViewData["Title"] = "Profile";
+    ViewData.AddActivePage(ManageNavPages.Index);
+}
+
+@await Html.PartialAsync("_StatusMessage", Model.StatusMessage)
+<link rel="stylesheet" href="~/Portal/assets/css/setting_account.css" />
+<section class="container-dashboard gird-container-full change-password padding-customer-1">
+    <div class="grid-container full mt-5">
+        <div class="grid-x grid-padding-x">
+            <div class="cell">
+                <div class="dash-header container-medium scroll-box center">
+                    <div class="row p-3">
+                        <h2>Manage your account</h2>
+                        <label class="fs-6">Change your account settings</label>
+                        <hr />
+                        <div class="col-3 p-2 menu1">
+                            @await Html.PartialAsync("_ManageNav")
+                        </div>
+                        <div class="col-sm-9">
+                            <form method="post">
+                                <div asp-validation-summary="All" class="text-danger"></div>
+                                <div class="form-group">
+                                    <label asp-for="Username" class="fs-6"></label>
+                                    <input asp-for="Username" class="form-control" disabled />
+
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Email" class="fs-6"></label>
+                                    @if (Model.IsEmailConfirmed)
+                                    {
+                                        <div class="input-group">
+                                            <input asp-for="Email" class="form-control" disabled />
+                                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-check"></i></span>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <input asp-for="Email" class="form-control" disabled />
+                                        <button asp-action="SendVerificationEmail" class="btn btn-link">Send verification email</button>
+                                    }
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="PhoneNumber" class="fs-6"></label>
+                                    <input type="number" asp-for="PhoneNumber" class="form-control" />
+                                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                                </div>
+                                <div class="form-group float-end">
+                                    <button type="submit" class="buttoncustom btn btn-default mt-3">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
+<partial name="_ChatSupport" />

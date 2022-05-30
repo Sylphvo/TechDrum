@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<UserSecretsId>aspnet-NagaCasino.Web-875E91C6-556C-46F0-84D4-C2E19C9F8D63</UserSecretsId>
+		<Nullable>enable</Nullable>
+		<Version>2021.9.29.1</Version>
+		<ErrorReport>send</ErrorReport>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="wwwroot\Portal\**" />
+	  <Content Remove="wwwroot\Portal\**" />
+	  <EmbeddedResource Remove="wwwroot\Portal\**" />
+	  <None Remove="wwwroot\Portal\**" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Cross\NagaCasino.Core\TechDrum.Core.csproj" />
+		<ProjectReference Include="..\..\Repository\NagaCasino.Contract.Repository\TechDrum.Contract.Repository.csproj" />
+		<ProjectReference Include="..\..\Repository\NagaCasino.Repository\TechDrum.Repository.csproj" />
+		<ProjectReference Include="..\..\Service\NagaCasino.Contract.Service\TechDrum.Contract.Service.csproj" />
+		<ProjectReference Include="..\..\Service\NagaCasino.Service\TechDrum.Service.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="wwwroot\fonts\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,194 @@
+﻿@using TechDrum.Core.Utils
+@using TechDrum.Web.Areas.Portal.Views.History
+@using TechDrum.Core.Commons
+@model PaginatedList<TechDrum.Core.Models.User.UserHistoryModel>
+@{
+    ViewData["Title"] = "NAGAIns";
+    Layout = "~/Areas/Portal/Views/Shared/_Layout.cshtml";
+    ViewData[ViewDataKey.Title] = Messages.History.PageTitleTransaction;
+    var varNameURL = FundistHelper.ClientConfigs.BaseUrlPortal;
+    ViewData.AddActivePage(Button.NAGAINS);
+    var cookie = Context.Request.Cookies["2fa"];
+}
+@section Styles{
+    <link rel="stylesheet" href="~/Portal/assets/css/transactions.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Portal/assets/css/datatables.min.css" />
+    <link rel="stylesheet" href="/Portal/assets/css/setting_account.css" />
+    <link rel="stylesheet" href="~/Portal/assets/css/login_register.css" />
+}
+@section scripts{
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    @*<link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap.min.css">*@
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    @*<script type="text/javascript" src="~/Portal/assets/js/datatables.min.js" defer></script>*@
+    <script>
+    var varNameURL = '@varNameURL'
+            var username = '@Context.User.Identity.Name';
+    </script>
+    <script type="text/javascript" src="/js/AccountDashboard/handler.history.min.js"></script>
+    @*<script type="text/javascript">
+            //$(document).ready(function () {
+            //    $('#withdrawU').DataTable({
+            //        columnDefs: [{ 'targets': 2, type: 'date-euro' }],
+            //        order: [2, 'desc'],
+            //    });
+            //});
+
+        </script>*@
+}
+
+<section class="container-dashboard gird-container-full change-password padding-customer">
+    <div class="grid-container full mt-5">
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-10 medium-12 center">
+                <div class="dash-header center ">
+                    <div class="tabs tab-panel">
+                        @*<ul class="tabs button_top" data-tabs id="example-tabs">
+                            <li class="tabs-title is-active"><a class="btn-panel button_select" href="#panel1" aria-selected="true">Transaction</a></li>
+                            <li class="tabs-title"><a class="btn-panel button_select" href="#panel3">Check TxHash</a></li>
+                            </ul>*@
+                        <div class="tabs-content" data-tabs-content="example-tabs">
+                            <div class="tabs-panel is-active" id="panel1">
+                                <div class="content_panel1">
+                                    <div class="import">
+                                        <div class="box-pages">
+                                            <h2 class="title-history">Select your transactions</h2>
+                                            @await Html.PartialAsync("_Button")
+                                            <div>
+                                                <div class="ng-table-custom  in" id="naga">
+                                                    <div class="cell large-10 medium-12 center">
+                                                        <h3 class="titleaa"> HISTORY NAGA</h3>
+                                                        <table id="withdrawU" class="scroll table table-hover table-bordered dataTable no-footer" style="width:100%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Code</th>
+                                                                    @*<th><a asp-action="NAGA" asp-route-sortOrder="@ViewData["DateSortParm"]">Time</a></th>*@
+                                                                    <th>Time</th>
+                                                                    <th>Address From</th>
+                                                                    <th>Address To</th>
+                                                                    <th>Amount</th>
+                                                                    <th>Fee</th>
+                                                                    <th>Status</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                @foreach (var item in Model)
+                                                                {
+                                                                    <tr>
+                                                                        <td>@item.TransactionId.Substring(0, 8)</td>
+                                                                        <td title="@item.Time">@item.Time.ToString().Replace("T", " ").Split(".")[0]</td>
+                                                                        <td>@item.From</td>
+                                                                        <td>@item.To</td>
+                                                                        <td>@item.Amount</td>
+                                                                        <td>@item.Fee</td>
+                                                                        @switch (item.Status)
+                                                                        {
+                                                                            case "New":
+                                                                            case "Sent":
+                                                                                <td>Pending</td>
+                                                                                break;
+                                                                            case "Success":
+                                                                            case "Done":
+                                                                                <td><i class="fa fa-check-circle-o"></i></td>
+                                                                                break;
+                                                                            case "Wait":
+                                                                                <td class="status d-flex">
+                                                                                    @{
+                                                                                        if (cookie == "True")
+                                                                                        {
+                                                                                            <a class='nav-link  border' style='background: #f4cb13;' onclick="Verifytransaction('@item.TransactionId')">Verify</a>
+                                                                                        }
+                                                                                        else
+                                                                                        {
+                                                                                            if (item.Resend >= 1)
+                                                                                            {
+                                                                                                var calc = DateTimeOffset.UtcNow - item.Expired;
+                                                                                                if (calc.Value.Minutes >= -1)
+                                                                                                {
+                                                                                                    <a class='nav-link  border' style='background: #f4cb13;' onclick="Resend('@item.TransactionId')">Resend</a>
+                                                                                                }
+                                                                                                else
+                                                                                                {
+                                                                                                    <a class='nav-link  border' style='background: #f4cb13;' onclick="Verifytransaction('@item.TransactionId')">Verify</a>
+                                                                                                }
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                <a class='nav-link  border' style='background: #f4cb13;' onclick="Resend('@item.TransactionId')">Resend</a>
+
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                    <a class='nav-link  border' style='background: #f4cb13;' onclick="Cancel('@item.TransactionId')">Cancel</a>
+                                                                                </td>
+                                                                                break;
+                                                                            default:
+                                                                                <td><i class="fa fa-close"></i></td>
+                                                                                break;
+                                                                        }
+                                                                    </tr>
+                                                                }
+
+                                                            </tbody>
+                                                        </table>
+                                                        @{
+                                                            var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+                                                            var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+                                                        }
+                                                        <div class="main">
+                                                            <a asp-action="NAGA"
+                                                               asp-route-sortOrder="@ViewData["CurrentSort"]"
+                                                               asp-route-pageNumber="@(Model.PageIndex - 1)"
+                                                               asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                                                               class="btn btn-default @prevDisabled">
+                                                                Previous
+                                                            </a>
+                                                            <a asp-action="NAGA"
+                                                               asp-route-sortOrder="@ViewData["CurrentSort"]"
+                                                               asp-route-pageNumber="@(Model.PageIndex + 1)"
+                                                               asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                                                               class="btn btn-default @nextDisabled">
+                                                                Next Page
+                                                            </a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Verify Token</h5>
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <form id="submit-verify">
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Code</label>
+                    <input type="number" class="form-control" value="" id="Token">
+                    <input hidden type="text" class="form-control" value="" id="transId">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" type="button" onclick="VerifyCode()">Verify</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<partial name="_ChatSupport" />
+<script type="text/javascript" src="~/js/Load/Load.js"></script>
+

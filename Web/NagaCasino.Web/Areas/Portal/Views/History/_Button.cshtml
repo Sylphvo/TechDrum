@@ -1,0 +1,34 @@
+﻿@using TechDrum.Web.Areas.Portal.Views.History
+@using Microsoft.AspNetCore.Identity
+@using TechDrum.Contract.Repository.Models.User
+@inject SignInManager<UserEntity> _signInManager
+@{
+    var hasExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).Any();
+    var cookieRoles = Context.Request.Cookies["Roles"];
+}
+
+
+<ul class="nav nav-tabs">
+    @if (cookieRoles == "Admin" || cookieRoles == "User")
+    {
+        <li class="nav-item selecttransaction @Button.ETHNavClass(ViewContext)">
+            <a class="nav-link  border" asp-action="ETH">ETH</a>
+        </li>
+        <li class="nav-item selecttransaction  @Button.NAGANavClass(ViewContext)">
+            <a class="nav-link border" asp-action="NAGA">NAGA</a>
+        </li>
+        <li class="nav-item selecttransaction @Button.CommissionNavClass(ViewContext)">
+            <a class="nav-link border" asp-action="Commission">COMMISSION</a>
+        </li>
+        @*<li class="nav-item selecttransaction @Button.NAGANavInsClass(ViewContext)">
+            <a class="nav-link border" asp-action="NAGAIns">INSURANCE</a>
+        </li>*@
+    }
+    else
+    {
+        @*<li class="nav-item selecttransaction  @Button.NAGANavInsClass(ViewContext)">
+            <a class="nav-link border" asp-action="NAGAIns">NAGA</a>
+        </li>*@
+    }
+</ul>
+

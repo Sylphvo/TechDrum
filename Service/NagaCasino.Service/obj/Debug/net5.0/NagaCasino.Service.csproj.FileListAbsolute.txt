@@ -1,0 +1,57 @@
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Service.deps.json
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Service.dll
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\ref\NagaCasino.Service.dll
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Service.pdb
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Contract.Repository.dll
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Contract.Service.dll
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Core.dll
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Core.pdb
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Contract.Repository.pdb
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Contract.Service.pdb
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.csproj.AssemblyReference.cache
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.AssemblyInfoInputs.cache
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.AssemblyInfo.cs
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.csproj.CoreCompileInputs.cache
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.csproj.CopyComplete
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.dll
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\ref\NagaCasino.Service.dll
+D:\SVNN\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.pdb
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Service.deps.json
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Service.dll
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Service.pdb
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Contract.Repository.dll
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Contract.Service.dll
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Core.dll
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Core.pdb
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Contract.Repository.pdb
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Contract.Service.pdb
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.csproj.AssemblyReference.cache
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.AssemblyInfoInputs.cache
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.AssemblyInfo.cs
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.csproj.CoreCompileInputs.cache
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.csproj.CopyComplete
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.dll
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\refint\NagaCasino.Service.dll
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.pdb
+D:\Me\Source Code\The Best\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\ref\NagaCasino.Service.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Service.deps.json
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Service.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Service.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Contract.Repository.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Contract.Service.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Core.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Core.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Contract.Repository.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\bin\Debug\net5.0\NagaCasino.Contract.Service.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.csproj.AssemblyReference.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.AssemblyInfoInputs.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.AssemblyInfo.cs
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.csproj.CoreCompileInputs.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.csproj.CopyComplete
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\refint\NagaCasino.Service.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\NagaCasino.Service.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\Service\NagaCasino.Service\obj\Debug\net5.0\ref\NagaCasino.Service.dll

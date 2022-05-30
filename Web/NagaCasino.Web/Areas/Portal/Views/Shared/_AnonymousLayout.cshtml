@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    @{
+        await Html.RenderPartialAsync("_Meta");
+        await Html.RenderPartialAsync("Assets/_TopScript");
+        await Html.RenderPartialAsync("Assets/_Style");
+    }
+    @await RenderSectionAsync("Styles", false)
+</head>
+<body>
+    <partial name="_ChatSupport" />
+
+    @{
+        await Html.RenderPartialAsync("Menu/_HeaderSign");
+    }
+
+    @{
+        await Html.RenderPartialAsync("Menu/_Navigation");
+    }
+
+    @RenderBody()
+
+    @{
+        @*<partial name="Assets/_BottomScript" />*@
+        await Html.RenderPartialAsync("Assets/_BottomScript");
+    }
+    @await RenderSectionAsync("Scripts", false)
+
+    @*@{
+            await Html.RenderPartialAsync("Menu/_Footer");
+        }*@
+
+    @{
+        await Html.RenderPartialAsync("Menu/_Sidebar");
+    }
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<div class="modal reveal insert-max tranfer2modal" id="withdraw_modal_usdx" data-keyboard="false" data-backdrop="static" style=" padding: 3.33333rem 1rem; padding: 1rem; margin-top: 0% !important; padding-left: 20px; padding-right: 20px; ">
+    <div class="content_modal">
+        <h4 style="font-size: 20px;">TRANSFER</h4>
+        <p>Available Withdraw: (<span id="Available_Transfer"></span>)</p>
+        <form class="balance-form m-3">
+            <label class="amount">
+                Amount
+                <input placeholder=" Amount*" class="withdraw-value" id="Amount_Transfer" value="" autocomplete="off" name="amount" step="0.1" type="tel" min="0.02" required pattern="^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$">
+                <span id="max" class="btn fill-max-amount" onclick="maxWidthVIP()">Max</span>
+            </label>
+            <label class="amount">
+                User Name To
+                <input style="width:100%" id="address_Widthdraw_vip" name="address-widthdraw-vip" type="text" autocomplete="off" value="" placeholder="User Name" pattern="^[a-z0-9]{1,20}$">
+            </label>
+            <label class="amount">
+                Mail To
+                <input style="width:100%" id="mail-user-to" name="address-widthdraw-vip" type="email" autocomplete="off" value="" placeholder="Email" readonly>
+
+            </label>
+                <div id="result"></div>
+            @if (Model.TwoFactorEnabled)
+            {
+                <p class="p-0">2FA Code: </p><input style="width:100%" id="2fa-widthdraw-vip" name="2FA-Widthdraw" type="text" value=""> <br />
+            }
+            else
+            {
+                <input style="width:100%" id="2fa-widthdraw-vip" name="2FA-Widthdraw" type="text" value="" hidden> <br />
+            }
+
+            <p class="note">Min TRANSFER <span style="font-style:italic;" id="Widthdraw_Min_USDX"></span> <span style="font-style:italic;">NAGA</span></p>
+            <a class="note link-naga"href="/policy" target="_blank">POLICY **</a>
+            <a id="button_widthdrawVIP" style="height: auto; padding: 8px;">Transfer</a>
+            <input style="background: #f0f8ff00; border: none;" class="close-button" data-dismiss="modal" data-close aria-label="Close reveal" value="x" type="button" />
+        </form>
+    </div>
+</div>

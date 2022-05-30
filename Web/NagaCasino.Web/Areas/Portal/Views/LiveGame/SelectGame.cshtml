@@ -1,0 +1,52 @@
+﻿@model TechDrum.Core.Models.Game.Root
+@{
+    Layout = "_Layout";
+    ViewData[ViewDataKey.Title] = Messages.LiveGame.PageTitleSelectGame;
+}
+@section Styles{
+    <link rel="stylesheet" href="~/Portal/assets/css/live_play.min.css" />
+}
+
+<section class="livegames">
+    <div class="grid-container full">
+        <div class="grid-x">
+            <div class="cell large-10 medium-12 center">
+                <div class="live_pages ">
+                    <div class="box-intro container-small">
+                        <h2 class="title-intro">NAGA CLUBS Live Games</h2>
+                        <p class="text-intro">NAGA CLUBS has thousands of free online games for all generation. Play action, sports, and other fun games for free</p>
+                    </div>
+                    <div class="list_card">
+                        <div class="grid-container full">
+                            <div class="grid-x grid-margin-x">
+                                @{
+                                    foreach (var item in Model.games)
+                                    {
+                                        if (item.MerchantID == "998")
+                                        {
+                                            <div class="cell large-3 medium-4 small-6">
+                                                <div class="box_card">
+                                                    <img stt="" class="img_card" src="@item.ImageFullPath" alt="@item.Name.en">
+                                                    <a href="/livegame?ID=@item.PageCode&System=@item.MerchantID" class="card_hover">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <h2 class="text-naga-title">@item.Name.en</h2>
+                                                            </div>
+                                                            <div class="col-md-12 d-flex justify-content-center">
+                                                                <span class="btn btn-naga">Play Now</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        }
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,509 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Web\\NagaCasino.Web\\TechDrum.Web.csproj": {}
+  },
+  "projects": {
+    "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Cross\\NagaCasino.Core\\TechDrum.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Cross\\NagaCasino.Core\\TechDrum.Core.csproj",
+        "projectName": "TechDrum.Core",
+        "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Cross\\NagaCasino.Core\\TechDrum.Core.csproj",
+        "packagesPath": "C:\\Users\\phuvo\\.nuget\\packages\\",
+        "outputPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Cross\\NagaCasino.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phuvo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Font.Awesome": {
+              "target": "Package",
+              "version": "[5.15.4, )"
+            },
+            "GoogleAuthenticator": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Humanizer": {
+              "target": "Package",
+              "version": "[2.11.10, )"
+            },
+            "Invedia.Core": {
+              "target": "Package",
+              "version": "[2021.7.22.1, )"
+            },
+            "Invedia.DI": {
+              "target": "Package",
+              "version": "[2021.7.22.1, )"
+            },
+            "Invedia.Data.IO": {
+              "target": "Package",
+              "version": "[2021.3.27.1, )"
+            },
+            "Invedia.Web": {
+              "target": "Package",
+              "version": "[2021.3.27.1, )"
+            },
+            "Invedia.Web.HealthCheck": {
+              "target": "Package",
+              "version": "[2021.3.23.1, )"
+            },
+            "Invedia.Web.Middlewares": {
+              "target": "Package",
+              "version": "[2021.9.7.1, )"
+            },
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.18.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.AzureKeyVault": {
+              "target": "Package",
+              "version": "[3.1.19, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.12.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Contract.Repository\\TechDrum.Contract.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Contract.Repository\\TechDrum.Contract.Repository.csproj",
+        "projectName": "TechDrum.Contract.Repository",
+        "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Contract.Repository\\TechDrum.Contract.Repository.csproj",
+        "packagesPath": "C:\\Users\\phuvo\\.nuget\\packages\\",
+        "outputPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Contract.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phuvo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Cross\\NagaCasino.Core\\TechDrum.Core.csproj": {
+                "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Cross\\NagaCasino.Core\\TechDrum.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Invedia.Data.EF": {
+              "target": "Package",
+              "version": "[2021.4.10.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Repository\\TechDrum.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Repository\\TechDrum.Repository.csproj",
+        "projectName": "TechDrum.Repository",
+        "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Repository\\TechDrum.Repository.csproj",
+        "packagesPath": "C:\\Users\\phuvo\\.nuget\\packages\\",
+        "outputPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phuvo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Cross\\NagaCasino.Core\\TechDrum.Core.csproj": {
+                "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Cross\\NagaCasino.Core\\TechDrum.Core.csproj"
+              },
+              "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Contract.Repository\\TechDrum.Contract.Repository.csproj": {
+                "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Contract.Repository\\TechDrum.Contract.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Service\\NagaCasino.Contract.Service\\TechDrum.Contract.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Service\\NagaCasino.Contract.Service\\TechDrum.Contract.Service.csproj",
+        "projectName": "TechDrum.Contract.Service",
+        "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Service\\NagaCasino.Contract.Service\\TechDrum.Contract.Service.csproj",
+        "packagesPath": "C:\\Users\\phuvo\\.nuget\\packages\\",
+        "outputPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Service\\NagaCasino.Contract.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phuvo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Cross\\NagaCasino.Core\\TechDrum.Core.csproj": {
+                "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Cross\\NagaCasino.Core\\TechDrum.Core.csproj"
+              },
+              "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Contract.Repository\\TechDrum.Contract.Repository.csproj": {
+                "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Contract.Repository\\TechDrum.Contract.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Service\\NagaCasino.Service\\TechDrum.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Service\\NagaCasino.Service\\TechDrum.Service.csproj",
+        "projectName": "TechDrum.Service",
+        "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Service\\NagaCasino.Service\\TechDrum.Service.csproj",
+        "packagesPath": "C:\\Users\\phuvo\\.nuget\\packages\\",
+        "outputPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Service\\NagaCasino.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phuvo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Cross\\NagaCasino.Core\\TechDrum.Core.csproj": {
+                "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Cross\\NagaCasino.Core\\TechDrum.Core.csproj"
+              },
+              "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Contract.Repository\\TechDrum.Contract.Repository.csproj": {
+                "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Contract.Repository\\TechDrum.Contract.Repository.csproj"
+              },
+              "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Service\\NagaCasino.Contract.Service\\TechDrum.Contract.Service.csproj": {
+                "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Service\\NagaCasino.Contract.Service\\TechDrum.Contract.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Web\\NagaCasino.Web\\TechDrum.Web.csproj": {
+      "version": "2021.9.29.1",
+      "restore": {
+        "projectUniqueName": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Web\\NagaCasino.Web\\TechDrum.Web.csproj",
+        "projectName": "TechDrum.Web",
+        "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Web\\NagaCasino.Web\\TechDrum.Web.csproj",
+        "packagesPath": "C:\\Users\\phuvo\\.nuget\\packages\\",
+        "outputPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Web\\NagaCasino.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phuvo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Cross\\NagaCasino.Core\\TechDrum.Core.csproj": {
+                "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Cross\\NagaCasino.Core\\TechDrum.Core.csproj"
+              },
+              "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Contract.Repository\\TechDrum.Contract.Repository.csproj": {
+                "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Contract.Repository\\TechDrum.Contract.Repository.csproj"
+              },
+              "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Repository\\TechDrum.Repository.csproj": {
+                "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Repository\\NagaCasino.Repository\\TechDrum.Repository.csproj"
+              },
+              "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Service\\NagaCasino.Contract.Service\\TechDrum.Contract.Service.csproj": {
+                "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Service\\NagaCasino.Contract.Service\\TechDrum.Contract.Service.csproj"
+              },
+              "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Service\\NagaCasino.Service\\TechDrum.Service.csproj": {
+                "projectPath": "D:\\Me\\Source Code\\Code New\\.NET FRAMEWORK\\Code New\\New folder\\TechDrum\\Service\\NagaCasino.Service\\TechDrum.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

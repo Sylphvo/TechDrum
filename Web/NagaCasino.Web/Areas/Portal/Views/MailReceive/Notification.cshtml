@@ -1,0 +1,28 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Notification";
+    Layout = "_LayoutMail";
+}
+@section Styles{
+    <link rel="stylesheet" href="~/Portal/assets/css/login_register.css" />
+}
+
+<section class="banner-image">
+    <div class="grid-container full">
+        <div class="grid-x">
+            <div class="image-banner">
+                <img src="~/Portal/assets/images/login_banner.jpg" alt="" style="height:100vh;">
+            </div>
+            <div class="cell large-10 medium-12 center">
+                <div class="banner-pages scroll-box">
+                    <div class="box-intro container-small">
+                        <div class="text-center">
+                            <h1 class="h3 mb-5 fw-normal">@Model</h1>
+                            <a class="btn btn-black" style="display: inline-block !important; text-align: center; height: auto; width: 18rem; padding: 9px; " href="/accountdashboard">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

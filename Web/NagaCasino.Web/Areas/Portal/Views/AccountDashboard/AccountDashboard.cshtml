@@ -1,0 +1,142 @@
+﻿@using TechDrum.Core.Utils
+@using Microsoft.AspNetCore.Http
+@model TechDrum.Contract.Repository.Models.User.UserEntity
+@{
+    Layout = "_Layout";
+    ViewData[ViewDataKey.Title] = Messages.AccountDashboard.PageTitleAccountDashboard;
+    var ETHrating = FundistHelper.ClientConfigs.ETHrating;
+
+}
+@section Styles{
+    <link rel="stylesheet" href="~/Portal/assets/css/dashboard.min.css" />
+    <link rel="stylesheet" href="~/css/sylphcustomize/customize.css" />
+    <link rel="stylesheet" href="/css/loader.css" />
+    <link rel="stylesheet" href="/Portal/assets/css/notifypopup.min.css" />
+
+}
+<style>
+    a.btn.btn-default.fill-max-amount.copyeth {
+        padding: 5px;
+        height: auto;
+        width: 37px;
+        border-radius: 50%;
+    }
+</style>
+<section class="container-dashboard gird-container-full padding-customer">
+    <div class="grid-container full mt-5">
+        <div class="grid-x grid-padding-x">
+            <div class="cell medium-10 center">
+                <div class="dash-header container-medium center">
+                    <div class="my-profile">
+                        <div class="info">
+                            <p>
+                                <span class="text-naga">Welcome,</span>
+                            </p>
+                        </div>
+                        <div class="data">
+                            <div class="box-icon link">
+                                <img src="~/Image/saovang.png" alt="">
+                                <a style="text-decoration: none;color: #212833;" href="#" target="_blank">VIP (<span class="my-name" id="levelBets"></span>)</a>
+                            </div>
+                            <div class="box-icon link">
+                                <img src="~/Image/icons-link.png" alt="">
+                                <a style="text-decoration: none;color: #212833;" href="/affiliates" target="_blank">Affiliates (<span class="my-name" id="total_affiliate"></span>)</a>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="balance mt-3 grid-container">
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell medium-4 small-12">
+                                <div class="box-balance">
+                                    <div class="balance_card usdx ">
+                                        <div class="header_card">
+                                            <img src="~/Image/wallet.png" alt="">
+                                            <div class="num-balance-top">
+                                                <span class="text-size-balance" id="balanceNAGA"></span><br />
+                                                <span class="text-size-balance-eth" id="blaneeth"></span><br />
+                                                <span class="text-size-balance-rating" style="" id="rating"></span>
+                                            </div>
+                                        </div>
+                                        <div class="num_balance text-center">
+                                            <a class="text-naga-transaction" data-toggle="modal" data-target="#deposit_modal_usdx">Deposit</a>
+                                            <a class="text-naga-transaction" data-toggle="modal" data-target="#withdraw_modal_usdx" @*onclick="checklimitnaga()"*@>Transfer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell medium-4 small-12">
+                                <div class="box-balance">
+                                    <div class="balance_card usdx" style="background: #ffffff; border: 1px solid;">
+                                        <div class="header_card">
+                                            <img src="/Portal/assets/css/mybets.png" alt="">
+                                            <p class="textcolor">My Bets</p>
+                                        </div>
+                                        <div class="num_balance num_balance_text">
+                                            <span class="textcolor" id="mybets"></span><br />
+                                            <span style=" color: black;" class="balance"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell medium-4 small-12">
+                                <div class="box-balance">
+                                    <div class="balance_card usdx " style="background: #ffffff; border: 1px solid;">
+                                        <div class="header_card">
+                                            <img src="/Portal/assets/css/systembets.png" alt="">
+                                            <p class="textcolor">System bets</p>
+                                        </div>
+                                        <div class="num_balance num_balance_text">
+                                            <span class="textcolor" id="systemBets"></span><br />
+                                            <span style=" color: black;" class="balance"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts{
+    @*<link rel="stylesheet" href="/css/ModalLoader.css">*@
+    <script>
+        var ETHRATING = "@ETHrating";
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0" nonce="l7emWttn"></script>
+    <script src="~/js/AccountDashboard/qrcode.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.7/signalr.min.js"></script>
+    <script>
+            const connection = new signalR.HubConnectionBuilder()
+                .withUrl("https://streamline.amazingtech.vn/hub/signalr")
+                .configureLogging(signalR.LogLevel.Information)
+                .build();
+            console.log(connection);
+            async function start() {
+                try {
+                    await connection.start();
+                } catch (err) {
+                    console.log(err);
+                }
+            };
+            connection.onclose(start);
+            start();
+            try {
+                connection.on("linkdoc", (name, message) => {
+                    console.log(message);
+                });
+            } catch (err) {
+                console.error(err);
+            }
+        
+   
+    </script>
+    <script type="text/javascript" src="~/js/AccountDashboard/textchange.min.js"></script>
+    <script type="text/javascript" src="~/Portal/assets/js/notifypopup.js"></script>
+
+}
