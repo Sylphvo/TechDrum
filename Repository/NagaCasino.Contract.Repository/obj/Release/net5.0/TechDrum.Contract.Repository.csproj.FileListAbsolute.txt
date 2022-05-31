@@ -1,0 +1,15 @@
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\bin\Release\net5.0\TechDrum.Contract.Repository.deps.json
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\bin\Release\net5.0\TechDrum.Contract.Repository.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\bin\Release\net5.0\TechDrum.Contract.Repository.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\bin\Release\net5.0\TechDrum.Core.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\bin\Release\net5.0\TechDrum.Core.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\obj\Release\net5.0\TechDrum.Contract.Repository.csproj.AssemblyReference.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\obj\Release\net5.0\TechDrum.Contract.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\obj\Release\net5.0\TechDrum.Contract.Repository.AssemblyInfoInputs.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\obj\Release\net5.0\TechDrum.Contract.Repository.AssemblyInfo.cs
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\obj\Release\net5.0\TechDrum.Contract.Repository.csproj.CoreCompileInputs.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\obj\Release\net5.0\TechDrum.Contract.Repository.csproj.CopyComplete
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\obj\Release\net5.0\TechDrum.Contract.Repository.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\obj\Release\net5.0\refint\TechDrum.Contract.Repository.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\obj\Release\net5.0\TechDrum.Contract.Repository.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Repository\NagaCasino.Contract.Repository\obj\Release\net5.0\ref\TechDrum.Contract.Repository.dll

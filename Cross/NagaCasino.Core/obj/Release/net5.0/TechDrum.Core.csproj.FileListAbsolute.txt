@@ -1,0 +1,12 @@
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Cross\NagaCasino.Core\bin\Release\net5.0\TechDrum.Core.deps.json
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Cross\NagaCasino.Core\bin\Release\net5.0\TechDrum.Core.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Cross\NagaCasino.Core\bin\Release\net5.0\TechDrum.Core.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Cross\NagaCasino.Core\obj\Release\net5.0\TechDrum.Core.csproj.AssemblyReference.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Cross\NagaCasino.Core\obj\Release\net5.0\TechDrum.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Cross\NagaCasino.Core\obj\Release\net5.0\TechDrum.Core.AssemblyInfoInputs.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Cross\NagaCasino.Core\obj\Release\net5.0\TechDrum.Core.AssemblyInfo.cs
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Cross\NagaCasino.Core\obj\Release\net5.0\TechDrum.Core.csproj.CoreCompileInputs.cache
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Cross\NagaCasino.Core\obj\Release\net5.0\TechDrum.Core.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Cross\NagaCasino.Core\obj\Release\net5.0\refint\TechDrum.Core.dll
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Cross\NagaCasino.Core\obj\Release\net5.0\TechDrum.Core.pdb
+D:\Me\Source Code\Code New\.NET FRAMEWORK\Code New\New folder\TechDrum\Cross\NagaCasino.Core\obj\Release\net5.0\ref\TechDrum.Core.dll
